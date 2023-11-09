@@ -28,10 +28,10 @@ def index():
     text = readDetails(filepath)
     return render_template('homepage.html', text = text)
 
-#@app.route('/hello/<name>')
-#def hello(name):
-    #listOfNames = [name, "YO", "Yennifer"]
-    #return render_template('name.html', name = name, nameList = listOfNames)
+@app.route('/hello/<name>')
+def hello(name):
+    listOfNames = [name, "YO", "Yennifer"]
+    return render_template('name.html', name = name, nameList = listOfNames)
 
 @app.route('/form', methods=['GET', 'POST'])
 def formDemo(name=None):
