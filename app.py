@@ -17,7 +17,7 @@ def homepage():
     return render_template('homepage.html')
 
 
-filepath = "virtualenv/week10/static/info.txt"
+filepath = "/static/info.txt"
 @app.route('/')
 def readDetails(filepath):
     with open(filepath, 'r') as f:
