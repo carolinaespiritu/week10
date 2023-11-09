@@ -34,7 +34,7 @@ def index():
     #return render_template('name.html', name = name, nameList = listOfNames)
 
 @app.route('/form', methods=['GET', 'POST'])
-def formDemo():
+def formDemo(name=None):
     if request.method == 'POST':
         name=request.form['name']
     return render_template('form.html', name=name)
