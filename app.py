@@ -8,7 +8,7 @@ def readDetails(filepath = "/Users/carolinaespiritu/Desktop/virtualenv/virtualen
         return [line for line in f]
     
 def index():
-    text = readDetails('/Users/carolinaespiritu/Desktop/virtualenv/virtualenv/week10/static/info.txt')
+    text = readDetails('/static/info.txt')
     return render_template('homepage.html', text = text)
     
 #Make a homepage
