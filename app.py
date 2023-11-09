@@ -30,7 +30,7 @@ def index():
 
 @app.route('/hello/<name>')
 def hello(name):
-    listOfNames = [name, "YO", "Yennifer"]
+    listOfNames = [name, "joe", "mama"]
     return render_template('name.html', name = name, nameList = listOfNames)
 
 @app.route('/form', methods=['GET', 'POST'])
