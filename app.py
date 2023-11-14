@@ -2,6 +2,13 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
+#Setup app to use a sqlalchemy database
+
+
+#Setup a simple table for database
+
+
+#Function to read from textfile
 def readDetails(filepath = "/Users/carolinaespiritu/Desktop/virtualenv/virtualenv/week10/static/info.txt"):
     with open(filepath, 'r') as f:
         
@@ -38,6 +45,8 @@ def formDemo(name=None):
     if request.method == 'POST':
         name=request.form['name']
     return render_template('form.html', name=name)
+
+# Add a page to view all visitors
 
 #Add the option to run this file directly
 if __name__ == "__main__":
